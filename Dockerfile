@@ -1,11 +1,3 @@
-# vintagestory-docker
-An alternative Dockerfile to [Devidian/docker-vintagestory](https://github.com/Devidian/docker-vintagestory).
-
-## Why?
-I plan to do much more than simply host Vintage Story, thus, I wanted a clean starting point. This is my 'clean' version that I intend to start from.
-
-### Dockerfile
-```dockerfile
 # Build stage
 FROM alpine:latest as base
 
@@ -32,4 +24,3 @@ EXPOSE 42420/tcp
 
 # Execution command
 CMD dotnet VintagestoryServer.dll --dataPath $VS_DATA_PATH
-```
